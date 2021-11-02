@@ -3,6 +3,9 @@
     "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
     "domain_main": "{{cookiecutter.project_slug}}.com",
     "domain_staging": "stag.{{cookiecutter.domain_main}}",
+    "version": "0.1.0",
+
+    "docker_image_name": "{{cookiecutter.project_slug}}:{{cookiecutter.version}}",
 
     "secret_key": "changethis",
     "first_superuser": "admin@{{cookiecutter.domain_main}}",
@@ -16,8 +19,17 @@
     "smtp_password": "",
     "smtp_emails_from_email": "info@{{cookiecutter.domain_main}}",
 
+    "postgres_server": "localhost",
+    "postgres_user": "postgres",
     "postgres_password": "changethis",
+    "postgres_db": "app",
+
     "pgadmin_default_user": "{{cookiecutter.first_superuser}}",
-    "pgadmin_default_user_password": "{{cookiecutter.first_superuser_password}}"
+    "pgadmin_default_user_password": "{{cookiecutter.first_superuser_password}}",
+
+
+    "_copy_without_render": [
+        "app/email-templates/**"
+    ]
 
 }
