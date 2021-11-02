@@ -1,7 +1,8 @@
-# cookiecutter-fastapi
+# cookiecutter-fastapi-postgresql
 
-In order to create a template to FastAPI projects. :rocket:
+In order to create a template to FastAPI projects that work with postgresql, sqlalchemy and much more. :rocket:
 
+This repository is cloned from https://github.com/tiangolo/full-stack-fastapi-postgresql in the backend directory and rebuild again for simple backend only purpose.
 ## Important
 To use this project you don't need fork it. Just run cookiecutter CLI and voilà!
 
@@ -18,7 +19,7 @@ pip install cookiecutter
 ### How can I generate a FastAPI project?
 
 ```bash
-cookiecutter gh:arthurhenrique/cookiecutter-fastapi
+cookiecutter gh:nunenuh/cookiecutter-fastapi-postgresql
 ```
 
 ### Hands On
